@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Kris Media</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
       line-height: 1.7;
       color: #222;
-      background: #ffffff;
+      background: #fff;
+      font-size: 16px;
     }
 
     .container {
@@ -32,7 +29,7 @@
     }
 
     .hero h1 {
-      font-size: 42px;
+      font-size: clamp(28px, 5vw, 42px);
       font-weight: 800;
       letter-spacing: 1px;
       color: #1F3A5F;
@@ -41,7 +38,7 @@
 
     .hero p {
       color: #5F6B7A;
-      font-size: 18px;
+      font-size: clamp(15px, 2.5vw, 18px);
       font-style: italic;
       margin-top: 8px;
     }
@@ -49,7 +46,7 @@
     h2 {
       color: #2c3e50;
       margin-top: 35px;
-      font-size: 28px;
+      font-size: clamp(22px, 3vw, 28px);
     }
 
     ul {
@@ -66,34 +63,32 @@
       background: #f7f7f7;
       padding: 18px;
       border-radius: 10px;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 1.8;
     }
 
     footer {
       margin-top: 50px;
-      padding-top: 20px;
-      border-top: 2px solid #eee;
+      padding: 20px 16px;
+      background: #f4f4f4;
       text-align: center;
     }
 
     .contact {
-      display: inline-block;
-      background: #f4f4f4;
-      padding: 20px 25px;
-      border-radius: 10px;
+      max-width: 420px;
+      margin: auto;
       text-align: left;
-      max-width: 100%;
     }
 
     .contact h2 {
       text-align: center;
-      margin-top: 0;
-      font-size: 24px;
+      margin: 0 0 12px;
+      font-size: 1.4rem;
     }
 
     .contact p {
       margin: 8px 0;
+      font-size: 1rem;
       word-break: break-word;
     }
 
@@ -106,26 +101,10 @@
       text-decoration: underline;
     }
 
-    /* Mobile Optimization */
-    @media (max-width: 768px) {
-      body {
-        font-size: 16px;
-      }
-
+    /* Mobile tweaks */
+    @media (max-width: 480px) {
       .container {
-        padding: 16px;
-      }
-
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      h2 {
-        font-size: 24px;
+        padding: 14px;
       }
 
       ul {
@@ -133,194 +112,57 @@
       }
 
       .tags {
-        font-size: 14px;
-      }
-
-      .contact {
-        width: 100%;
-        padding: 18px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 28px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      h2 {
-        font-size: 22px;
-      }
-
-      body {
-        line-height: 1.6;
+        font-size: 13px;
       }
     }
   </style>
 </head>
 
 <body>
-
   <div class="container">
 
     <section class="hero">
       <h1>Kris Media</h1>
-
-      <p>
-        High-impact research and marketing without agency overhead
-      </p>
+      <p>High-impact research and marketing without agency overhead</p>
     </section>
 
     <section>
       <h2>Global Experience. Subject Depth. Business Impact.</h2>
-
       <ul>
-        <li>
-          Over 20 years of experience in research, writing, and marketing
-          for academicians, business schools, and universities.
-        </li>
-
-        <li>
-          Experts in AI, cybersecurity, IT services, corporate innovation,
-          HR, marketing, and management education.
-        </li>
-
-        <li>
-          Writing and editing case studies, teaching notes, and books
-          for global business schools.
-        </li>
-
-        <li>
-          Remote collaborations with academicians across France, Germany,
-          Netherlands, South Africa, UAE, UK, and the US.
-        </li>
-
-        <li>
-          Media articles for CXOs of companies across different sizes
-          and industries.
-        </li>
-
-        <li>
-          Business case studies in marketing, HR, organizational behavior,
-          strategy, and general management (some published via European
-          Case Clearing House).
-        </li>
-
-        <li>
-          Experienced in academic papers, books, brochures, proposals,
-          CXO interviews, speeches, market research, blogs, newsletters,
-          and white papers.
-        </li>
+        <li>Over 20 years of experience in research, writing, and marketing...</li>
+        <li>Experts in AI, cybersecurity, IT services, corporate innovation...</li>
+        <li>Writing and editing case studies, teaching notes, and books...</li>
+        <li>Remote collaborations across multiple countries...</li>
+        <li>Media articles for CXOs...</li>
+        <li>Business case studies published via European Case Clearing House...</li>
+        <li>Experienced in academic papers, books, proposals, white papers...</li>
       </ul>
     </section>
 
     <section>
       <h2>Key Focus Areas</h2>
-
       <div class="tags">
-        Marketing Communications |
-        Academic Research |
-        Remote Research |
-        Research Consulting |
-        Business Case Studies |
-        Management Education |
-        AI Content |
-        Cybersecurity Writing |
-        Technology Writing |
-        IT Services |
-        Tech Content
+        Marketing Communications | Academic Research | Remote Research |
+        Research Consulting | Business Case Studies | Management Education |
+        AI Content | Cybersecurity Writing | Technology Writing | IT Services
       </div>
     </section>
 
-   <footer>
-  <div class="contact">
-    <h2>Contact</h2>
-
-    <p><strong>Christoph Zacharias (Kris)</strong></p>
-
-    <p>
-      Phone:
-      <a href="tel:+919845484665">
-        +91 98454 84665
-      </a>
-    </p>
-
-    <p>
-      Email:
-      <a href="mailto:czbangalore@yahoo.co.in">
-        czbangalore@yahoo.co.in
-      </a>
-    </p>
-
-    <p>
-      LinkedIn:
-      <a
-        href="https://www.linkedin.com/in/kriswriter/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View Profile
-      </a>
-    </p>
   </div>
-</footer>
 
-<style>
-  footer {
-    background: #f4f4f4;
-    padding: 20px 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  <footer>
+    <div class="contact">
+      <h2>Contact</h2>
+      <p><strong>Christoph Zacharias (Kris)</strong></p>
+      <p>Phone: <a href="tel:+919845484665">+91 98454 84665</a></p>
+      <p>Email: <a href="mailto:czbangalore@yahoo.co.in">czbangalore@yahoo.co.in</a></p>
+      <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/kriswriter/" target="_blank" rel="noopener noreferrer">
+          View Profile
+        </a>
+      </p>
+    </div>
+  </footer>
 
-  .contact {
-    width: 100%;
-    max-width: 400px;
-    text-align: left;
-  }
-
-  .contact h2 {
-    margin: 0 0 12px;
-    font-size: 1.5rem;
-    color: #222;
-  }
-
-  .contact p {
-    margin: 8px 0;
-    line-height: 1.5;
-    font-size: 1rem;
-    color: #333;
-  }
-
-  .contact a {
-    color: #0066cc;
-    text-decoration: none;
-    word-break: break-word;
-  }
-
-  .contact a:hover {
-    text-decoration: underline;
-  }
-
-  /* Mobile Optimization */
-  @media (max-width: 600px) {
-    footer {
-      padding: 16px 12px;
-    }
-
-    .contact h2 {
-      font-size: 1.3rem;
-    }
-
-    .contact p {
-      font-size: 0.95rem;
-    }
-  }
-</style>
 </body>
 </html>
-
