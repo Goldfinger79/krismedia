@@ -6,77 +6,52 @@
   <title>Kris Media</title>
 
   <style>
-    /* =========================
-       BASE (MOBILE FIRST)
-    ========================== */
-
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      font-family: Arial, system-ui, -apple-system, sans-serif;
-      line-height: 1.75;
-      color: #1f2937;
-      background: #ffffff;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
       font-size: 16px;
     }
 
-    a {
-      color: #0f62fe;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* PAGE WRAPPER */
+    /* MAIN LAYOUT */
     .container {
       max-width: 900px;
-      margin: 0 auto;
+      margin: auto;
       padding: 18px;
     }
 
-    /* =========================
-       HERO
-    ========================== */
-
+    /* HERO */
     .hero {
       text-align: center;
-      padding: 40px 10px 20px;
+      padding: 30px 10px 10px;
     }
 
     .hero h1 {
-      font-size: clamp(28px, 6vw, 44px);
+      font-size: clamp(28px, 6vw, 42px);
       font-weight: 800;
+      color: #1F3A5F;
       margin: 0;
-      letter-spacing: -0.5px;
-      color: #1f3a5f;
     }
 
     .hero p {
-      margin-top: 10px;
-      font-size: clamp(15px, 3.5vw, 18px);
-      color: #5f6b7a;
+      margin-top: 8px;
+      font-size: clamp(15px, 3vw, 18px);
+      color: #5F6B7A;
       font-style: italic;
     }
 
-    /* =========================
-       SECTIONS
-    ========================== */
-
-    section {
-      margin-top: 34px;
-    }
-
+    /* SECTIONS */
     h2 {
-      font-size: clamp(20px, 4.5vw, 28px);
-      margin-bottom: 14px;
-      color: #111827;
-      letter-spacing: -0.2px;
+      font-size: clamp(20px, 4vw, 28px);
+      color: #2c3e50;
+      margin-top: 30px;
+      margin-bottom: 12px;
     }
 
     ul {
@@ -88,75 +63,75 @@
       margin-bottom: 12px;
     }
 
-    /* TAG BOX */
     .tags {
-      background: #f6f8fa;
-      border: 1px solid #e5e7eb;
+      margin-top: 10px;
+      background: #f7f7f7;
       padding: 16px;
-      border-radius: 12px;
+      border-radius: 10px;
       font-size: 14px;
       line-height: 1.7;
-      color: #374151;
+      color: #444;
     }
 
-    /* =========================
-       FOOTER (MOBILE-FIRST)
-    ========================== */
+    /* LINKS */
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
     .site-footer {
-      margin-top: 60px;
-      background: #f6f6f6;
-      border-top: 1px solid #e5e7eb;
+      margin-top: 50px;
+      background: #f4f4f4;
+      border-top: 2px solid #eee;
     }
 
     .footer-container {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 28px 18px;
-    }
-
-    .contact {
-      max-width: 520px;
+      margin: auto;
+      padding: 25px 18px;
     }
 
     .contact h2 {
-      font-size: 20px;
-      margin-bottom: 12px;
-      color: #111827;
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+      color: #222;
     }
 
     .contact p {
-      margin: 10px 0;
-      font-size: 15px;
-      color: #374151;
+      margin: 8px 0;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
     }
 
-    /* Make touch targets bigger (IMPORTANT for mobile UX) */
     .contact a {
+      word-break: break-word;
       display: inline-block;
-      padding: 6px 0;
+      padding: 4px 0;
     }
 
-    /* =========================
-       SMALL MOBILE TWEAKS
-    ========================== */
-
-    @media (max-width: 480px) {
+    /* MOBILE TWEAKS */
+    @media (max-width: 600px) {
       .container {
         padding: 14px;
-      }
-
-      .hero {
-        padding-top: 30px;
-      }
-
-      li {
-        margin-bottom: 10px;
       }
 
       .tags {
         font-size: 13px;
         padding: 14px;
+      }
+
+      .contact h2 {
+        font-size: 1.25rem;
+      }
+
+      .contact p {
+        font-size: 0.95rem;
       }
     }
   </style>
@@ -175,24 +150,32 @@
     <!-- EXPERIENCE -->
     <section>
       <h2>Global Experience. Subject Depth. Business Impact.</h2>
+
       <ul>
-        <li>Over 20 years of experience in research, writing, and marketing.</li>
-        <li>Expertise in AI, cybersecurity, IT services, and corporate innovation.</li>
-        <li>Case studies, teaching notes, and academic publishing for global schools.</li>
-        <li>International collaborations across Europe, UAE, UK, US, and Africa.</li>
-        <li>CXO-level articles, interviews, and executive communication.</li>
-        <li>Published business case studies (including ECCH).</li>
-        <li>White papers, proposals, research reports, and strategic content.</li>
+        <li>Over 20 years of experience in research, writing, and marketing for academicians, business schools, and universities.</li>
+
+        <li>Experts in AI, cybersecurity, IT services, corporate innovation, HR, marketing, and management education.</li>
+
+        <li>Writing and editing case studies, teaching notes, and books for global business schools.</li>
+
+        <li>Remote collaborations with academicians across France, Germany, Netherlands, South Africa, UAE, UK, and the US.</li>
+
+        <li>Media articles for CXOs of companies across different sizes and industries.</li>
+
+        <li>Business case studies in marketing, HR, organizational behavior, strategy, and general management (some published via European Case Clearing House).</li>
+
+        <li>Experienced in academic papers, books, brochures, proposals, CXO interviews, speeches, market research, blogs, newsletters, and white papers.</li>
       </ul>
     </section>
 
     <!-- FOCUS AREAS -->
     <section>
       <h2>Key Focus Areas</h2>
+
       <div class="tags">
         Marketing Communications | Academic Research | Remote Research |
         Research Consulting | Business Case Studies | Management Education |
-        AI Content | Cybersecurity Writing | Technology Writing | IT Services
+        AI Content | Cybersecurity Writing | Technology Writing | IT Services | Tech Content
       </div>
     </section>
 
