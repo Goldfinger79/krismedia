@@ -268,12 +268,45 @@
     </p>
 
   </div>
+<footer>
+  <div class="contact">
+
+    <h2>Contact</h2>
+
+    <p><strong>Christoph Zacharias (Kris)</strong></p>
+
+    <p>
+      Phone:
+      <a href="tel:+919845484665">
+        +91 98454 84665
+      </a>
+    </p>
+
+    <p>
+      Email:
+      <a href="mailto:czbangalore@yahoo.co.in">
+        czbangalore@yahoo.co.in
+      </a>
+    </p>
+
+    <p>
+      LinkedIn:
+      <a
+        href="https://www.linkedin.com/in/kriswriter/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Profile
+      </a>
+    </p>
+
+  </div>
 </footer>
 
 <style>
   footer {
     background: #f4f4f4;
-    padding: 20px 16px;
+    padding: 0 16px;
     display: flex;
     justify-content: flex-start;
   }
@@ -282,35 +315,43 @@
     width: 100%;
     max-width: 400px;
     text-align: left;
+    margin: 0;
+    padding: 0;
   }
 
   .contact h2 {
-    margin-bottom: 12px;
+    margin: 0 0 8px 0;
+    padding: 0;
     font-size: 1.5rem;
     color: #222;
+    text-align: left;
   }
 
   .contact p {
-    margin: 10px 0;
-    line-height: 1.6;
+    margin: 6px 0;
+    line-height: 1.5;
     font-size: 1rem;
     color: #333;
-    word-wrap: break-word;
   }
 
   .contact a {
     color: #0066cc;
     text-decoration: none;
+    word-break: break-word;
   }
 
   .contact a:hover {
     text-decoration: underline;
   }
 
-  /* Mobile optimization */
+  /* Mobile Optimization */
   @media (max-width: 600px) {
     footer {
-      padding: 16px 12px;
+      padding: 0 12px;
+    }
+
+    .contact {
+      max-width: 100%;
     }
 
     .contact h2 {
@@ -319,11 +360,6 @@
 
     .contact p {
       font-size: 0.95rem;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin-top: 4px;
     }
   }
 </style>
