@@ -1,4 +1,8 @@
-<div class="container">
+</head>
+
+<body>
+
+  <div class="container">
 
     <!-- HERO -->
     <section class="hero">
