@@ -1,9 +1,6 @@
 </head>
-
 <body>
-
   <div class="container">
-
     <!-- HERO -->
     <section class="hero">
         <h1>
